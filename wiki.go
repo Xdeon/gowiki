@@ -121,7 +121,6 @@ func main() {
 	http.HandleFunc("/edit/", makeHandler(editHandler))
 	http.HandleFunc("/save/", makeHandler(saveHandler))
 
-	//what the hell is below?
 	if *addr {
 		l, err := net.Listen("tcp", "127.0.0.1:0")
 		if err != nil {
